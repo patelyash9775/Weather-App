@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  margin-top: 60px;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  font-size: 120%;
+}
+
+.card {
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width:72%;
+  max-width: 420px;
+  margin: 1em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 70%;
+  border: none;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background:#7c7c7c2b;
+  color:white;
+  font-family: inherit;
+  font-size: 120%;
+  width: calc(100% - 100px);
+}
+
+button:hover {
+  background: black;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  background-color: black;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.pt-2.text-muted {
+  color: white;
+}
+.sp {
+  color: floralwhite;
+}
+.fas.fa-heart {
+  color: red;
+}
+.fas.fa-mug-hot {
+  color: burlywood;
+}
+.fas.fa-code {
+  color: black;
+}
+
+.social html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+ 
+}
+.social .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.social .button:hover{
+  width: 200px;
+}
+.social .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.social .button:nth-child(1):hover .icon{
+  background: #4267B2;
+  color:#4267B2 ;
+}
+.social .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.social .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+
+.social .button:nth-child(5):hover .icon{
+  background:black;
+}
+
+.social .button:nth-child(4):hover .icon{
+  background: #ff0000;
+}
+.social .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.social .button:hover .icon i{
+  color: #fff;
+}
+.social .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.social .button:nth-child(1) span{
+  color: #4267B2;
+
+}
+.social .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.social .button:nth-child(3) span{
+  color: #E1306C;
+}
+.social .button:nth-child(4) span{
+  color: #ff0000;
+}
+.social .button:nth-child(5) span{
+  color: black;
+}
+.fab.fa-facebook-f {
+  color: blue;
+}
+.fab.fa-linkedin-in {
+  color: deepskyblue;
+}
+.fab.fa-instagram {
+  color: tomato;
+}
+.fab.fa-youtube {
+  color: red;
+}
+.fab.fa-github {
+  color: black;
+}
